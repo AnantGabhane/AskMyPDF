@@ -259,11 +259,18 @@ AskMyPDF/
 
 ### Freezing Dependencies
 
-After installing new packages:
+After installing new packages, update requirements.txt:
+```bash
+pip freeze > requirements.txt
+```
+
+Or use the provided script:
 ```bash
 chmod +x freeze.sh
 ./freeze.sh
 ```
+
+**Note**: The project uses a simplified requirements.txt with unpinned versions to avoid dependency conflicts. If you need to pin specific versions, test thoroughly with your Python version.
 
 ### Running Tests
 
